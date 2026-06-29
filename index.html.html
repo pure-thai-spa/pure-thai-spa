@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURE THAI SPA 珀泰·足道 — นวดไทย นวดน้ำมัน วังทองหลาง</title>
+<meta name="description" content="PURE THAI SPA ร้านนวดไทยเพื่อสุขภาพ วังทองหลาง โทร 063 991 0515 เปิดทุกวัน 12:00-00:00">
+<style>
+  :root {
+    --cream: #f8f3ec;
+    --terracotta: #b5651d;
+    --deep-brown: #3d2b1f;
+    --sage: #7d8b6f;
+    --gold: #c9a86a;
+    --cream-dark: #ece3d4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @font-face {
+    font-family: 'system-serif';
+    src: local('Georgia');
+  }
+
+  body {
+    font-family: 'Noto Serif Thai', 'Georgia', serif;
+    background: var(--cream);
+    color: var(--deep-brown);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ===== Header / Hero ===== */
+  header {
+    padding: 64px 0 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border: 1.5px solid var(--terracotta);
+    border-radius: 50%;
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  h1 .cn {
+    font-size: 0.55em;
+    color: var(--sage);
+    font-weight: 400;
+    display: block;
+    margin-top: 6px;
+    letter-spacing: 4px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    color: var(--sage);
+    font-style: italic;
+    margin-top: 12px;
+  }
+
+  /* ===== Call CTA — the signature element ===== */
+  .call-block {
+    background: var(--deep-brown);
+    color: var(--cream);
+    text-align: center;
+    padding: 40px 24px;
+    margin: 0;
+  }
+
+  .call-eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  .phone-number {
+    font-family: 'Georgia', serif;
+    font-size: clamp(36px, 8vw, 52px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--cream);
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .phone-number a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid var(--terracotta);
+    padding-bottom: 4px;
+  }
+
+  .call-sub {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--cream-dark);
+    opacity: 0.85;
+  }
+
+  /* ===== Body sections ===== */
+  section {
+    padding: 56px 0;
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.85;
+    color: var(--deep-brown);
+    max-width: 600px;
+  }
+
+  .divider {
+    width: 48px;
+    height: 1.5px;
+    background: var(--terracotta);
+    margin: 48px auto;
+  }
+
+  /* ===== Services list ===== */
+  .services {
+    list-style: none;
+  }
+
+  .services li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--cream-dark);
+    font-size: 17px;
+  }
+
+  .services li:first-child {
+    border-top: 1px solid var(--cream-dark);
+  }
+
+  .service-name {
+    font-weight: 600;
+  }
+
+  .service-en {
+    font-size: 13px;
+    color: var(--sage);
+    font-style: italic;
+    margin-left: 8px;
+  }
+
+  /* ===== Info grid ===== */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 540px) {
+    .info-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
+
+  .info-card h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .info-card p {
+    font-size: 16px;
+    color: var(--deep-brown);
+  }
+
+  .info-card a {
+    color: var(--deep-brown);
+    text-decoration: underline;
+    text-decoration-color: var(--terracotta);
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    background: var(--cream-dark);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 14px;
+    color: var(--sage);
+  }
+
+  footer .footer-phone {
+    font-weight: 700;
+    color: var(--deep-brown);
+    font-size: 16px;
+  }
+
+  footer .footer-phone a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="mark">珀泰</div>
+      <h1>PURE THAI SPA<span class="cn">珀泰 · 足道</span></h1>
+      <p class="tagline">นวดไทยแท้ดั้งเดิม ใจกลางวังทองหลาง</p>
+    </div>
+  </header>
+
+  <div class="call-block">
+    <div class="container">
+      <p class="call-eyebrow">จองคิวหรือสอบถามได้ที่</p>
+      <p class="phone-number"><a href="tel:0639910515">063 991 0515</a></p>
+      <p class="call-sub">เปิดให้บริการทุกวัน 12:00 – 00:00 น.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <p class="section-label">เกี่ยวกับเรา</p>
+      <p class="intro-text">
+        ร้านนวดเพื่อสุขภาพ บรรยากาศผ่อนคลาย สะอาด เดินทางสะดวก
+        ให้บริการโดยทีมงานมืออาชีพ ครบทุกบริการในที่เดียว
+        ตั้งแต่นวดไทยแบบดั้งเดิม นวดน้ำมัน ไปจนถึงนวดฝ่าเท้าและ Ear Care
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="section-label">บริการของเรา</p>
+      <ul class="services">
+        <li><span class="service-name">นวดไทย</span><span class="service-en">Thai Massage</span></li>
+        <li><span class="service-name">นวดน้ำมัน</span><span class="service-en">Oil Massage</span></li>
+        <li><span class="service-name">นวดฝ่าเท้า</span><span class="service-en">Foot Massage</span></li>
+        <li><span class="service-name">นวดคอ บ่า ไหล่</span><span class="service-en">Neck &amp; Shoulder</span></li>
+        <li><span class="service-name">Ear Care</span><span class="service-en">採耳</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <p class="section-label">ข้อมูลร้าน</p>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>โทรศัพท์</h3>
+          <p><a href="tel:0639910515">063 991 0515</a></p>
+        </div>
+        <div class="info-card">
+          <h3>เวลาเปิด-ปิด</h3>
+          <p>ทุกวัน 12:00 – 00:00 น.</p>
+        </div>
+        <div class="info-card">
+          <h3>ที่ตั้ง</h3>
+          <p>วังทองหลาง กรุงเทพมหานคร</p>
+        </div>
+        <div class="info-card">
+          <h3>ติดต่อ Facebook</h3>
+          <p><a href="https://www.facebook.com/326purethaispa" target="_blank" rel="noopener">PURE THAI SPA 珀泰·足道</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>PURE THAI SPA 珀泰·足道 — นวดไทยเพื่อสุขภาพ วังทองหลาง</p>
+    <p style="margin-top:8px;" class="footer-phone"><a href="tel:0639910515">063 991 0515</a></p>
+  </footer>
+
+</body>
+</html>
